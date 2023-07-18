@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkOut Done</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="workoutSection">
+        <h1 class="title">SVP</h1>
+        <p>30 Days WorkOut Challenge</p>
+        <h4 id="days"></h4>
+        <h1 id="congratulations"></h1>
+        <ol id="workout"></ol>
+      </div>
+      <div class="complete">
+        <h3 class="complete-msg">Type "DONE" to start the next session</h3>
+
+        <input type="text" placeholder="DONE" id="confirm-msg" />
+        <button onclick="checkComplete()" id="next">Submit</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+      <div class="guide">
+        <table>
+          <tr>
+            <th>Beginner</th>
+            <td>1 set</td>
+          </tr>
+          <tr>
+            <th>Intermediate</th>
+            <td>2 set</td>
+          </tr>
+          <tr>
+            <th>Advanced</th>
+            <td>3 set</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
